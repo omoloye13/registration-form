@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN HERE</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: bisque;
+        }
+
+        .big-wrap {
+            text-align: center;
+            margin: 20px;
+            width: 50%;
+            height: 600px;
+        }
+
+        .big-wrap h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            height: 80px;
+        }
+
+        .big-wrap input {
+            padding: 20px;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-radius: 15px;
+            background-color: peachpuff;
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            width: 180px;
+            height: 80px;
+            border-radius: 15px;
+            background-color: palevioletred;
+            display: block;
+            margin: auto;
+        }
+
+        .big-container {
+            height: 750px;
+            background-color: rebeccapurple;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+
+        .img-wrap {
+            width: 50%;
+            height: 750px;
+            background-image: url(image/woman.png)
+        }
+
+        .cover h1 {
+            color: white;
+            font-size: 120px;
+            font-family: 'Times New Roman', Times, serif;
+            height: 300px;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .cover p {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: whitesmoke;
+        }
+
+        .cover {
+            width: 49%;
+            height: 750px;
+            background-color: rgba(76, 28, 187, 0.5);
+            position: absolute;
+        }
+
+        .chat {
+            width: 100px;
+            position: absolute;
+            top: 90%;
+            left: 90%;
+            color: white;
+        }
+        @media(max-width: 700px){
+            .big-wrap {
+            text-align: center;
+            margin: 20px;
+            width: 50%;
+            height: 600px;
+        }
+        .big-container {
+            height: 900px;
+            background-color: rebeccapurple;
+            width: 100%;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+        .img-wrap {
+            width: 50%;
+            height: 750px;
+            background-image: url(image/woman.png)
+        }
+        .cover {
+            width: 49%;
+            height: 900px;
+            background-color: rgba(76, 28, 187, 0.5);
+            position: absolute;
+        }
+        .cover h1 {
+            color: white;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            height: 200px;
+            text-align: center;
+            padding: 0px;
+            margin-top: 30px;
+            width: 200px;
+        }
+        .cover p {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: whitesmoke;
+            width: 200px;
+            height: 510px;
+        }
+        .chat {
+            width: 100px;
+            position: absolute;
+            top: 153%;
+            left: 72%;
+            color: white;
+        }
+         .big-wrap h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            height: 60px;
+            padding: 5px;
+        }
+        .big-wrap input {
+            padding: 20px;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 15px;
+            background-color: peachpuff;
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+            border: red solid;
+            width: 120px;
+        }
+        .btn{
+            width: 120px;
+            outline: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="big-container">
+        <section>
+            <div class="main">
+                <div class="cover">
+                    <h1>Hello,<br> World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus excepturi tempora
+                        suscipit nisi, earum provident quod eaque. Temporibus inventore minima rerum itaque similique
+                        repellendus quia nobis, provident tempora possimus.</p>
+                </div>
+                <div class="img-wrap">
+                </div>
+                <div class="big-wrap">
+                    <h1>LOGIN</h1>
+                    <form action="">
+                        <div class="fnameshow"></div>
+                        <input type="text" placeholder="Firstname" id="fname">
+                        <div class="lnameshow"></div>
+                        <input type="text" placeholder="Lastname" id="lname">
+                        <input type="text" placeholder="Email" style="display: inline-block;">
+                        <input type="number" placeholder="Phonenumber" style="display: inline-block;">
+                        <input type="password" placeholder="Password">
+                        <button class="btn">LOGIN</button><br>
+                        <a href="register.html" style="font-size: 20px; color: white;">Register Here</a>
+                    </form>
+                </div>
+                <div class="chat">
+                    <h2>Chat Us</h2>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
